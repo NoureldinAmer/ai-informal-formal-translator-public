@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: rgb(1,30,60);
+}
+
+
+
+.heading {
+  padding: 2em;
+  h1 {
+    color: white;
+    font-size: 5vmin;
+  }
+  
+  .keyword {
+    color: rgb(102,178,255);
+  }
+
+  h3 {
+    //font-size: 5vmin;
+    color: rgb(171,180,189);
+  }
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  display: grid;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  grid-gap: 15%;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 40%));
+// Change "auto-fit" to "auto-fill" above to see the difference
+
+  justify-content: center;
+  // .text-field {
+    
+  // }
+  .button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1000px) /* Desktop */ {
+  .heading {
+    text-align: justify;
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .container {
+    position: relative;
+    
+    display: grid;
+    //grid-gap: 20%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 100%));
+  // Change "auto-fit" to "auto-fill" above to see the difference
+  
+    justify-content: center;
+    // .text-field {
+      
+    // }
+    .button {
+      position:relative;
+      margin-left: 50%;
+      left: 0%;
+    }
+  }
+}
