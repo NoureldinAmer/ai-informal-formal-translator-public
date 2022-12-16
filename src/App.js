@@ -44,7 +44,7 @@ function App() {
   return (
     <div className="app">
       <div className="heading">
-        <h1><span className='keyword'> Testing deploying </span>Translator</h1>
+        <h1><span className='keyword'> Formal to Informal </span>Translator</h1>
         <h3>This tool takes in a casual, colloquial, and possibly slang-filled input text, then translates it into text written in a formal and professional manner</h3>
       </div>
       <div className="container">
