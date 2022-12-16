@@ -22,7 +22,7 @@ function App() {
   console.log(`the key is ${process.env.REACT_APP_OPENAI_API_KEY}`)
   console.log("clicked in App Component");
   const response = await openai.createCompletion({
-    model: "text-babbage-001",
+    model: "text-curie-001",
     prompt: `You are a chatbot whose job is to translate casual, colloquial, slang filled text into text that is formal and professional .\n\n${inputValue}\n\nTranslation:`,
     temperature: 0.65,
     max_tokens: 159,
